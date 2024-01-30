@@ -4,8 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assigment 3</title>
+    <!-- Tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Manrop google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind-custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font-manrope">
+    <header>
+        <nav class="max-w-7xl mx-auto w-10/12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class=" text-xl font-extrabold">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                    <li><a>About</a></li>
+ 
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                
+                <div class="navbar-end">
+                  <a class="btn  bg-[#FF4240] text-white">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+       
+          <div class="flex justify-center max-w-7xl w-10/12  mx-auto mt-[50px]">
+            <img class="w-full" src="Images/1.png" alt="">
+        </div>
+        <div>
+          <!-- <h2>Meet all the heroes from the field</h2> -->
+          <!-- <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br> turpis placerat dolor. Purus urna in sit nullam proin. </p> -->
+        </div>
+       
+
+
+    </header>
+    <main>
+      <section>
+        <div>
+          <h1  class="flex justify-center mt-28 font-extrabold text-3xl">Professional Hockeys Club</h1>
+          <p class="flex justify-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat </p> 
+          <p class="flex justify-center">dolor. Purus urna in sit nullam proin. </p> 
+
+        </div>
+        <div class=" flex justify-center  mt-20 ">
+          <div class="pr-16">
+            <div class="radial-progress  text-red-500" style="--value:87;" role="progressbar">87%</div>
+            <h2 class="font-extrabold flex justify-center">Prayer Facility</h2>
+            <p class="mt-5">Amet consectetur. Condimentum </p>
+            <p class="flex justify-center"> dignissim adipiscing .</p>
+          </div>
+
+          <div class="pr-16">
+            <div class="radial-progress text-green-500" style="--value:95;" role="progressbar">95%</div>
+            <h2 class="font-extrabold flex justify-center">Experienced Coach</h2>
+            
+            <p class="mt-5">Amet consectetur. Condimentum </p>
+            <p class="flex justify-center"> dignissim adipiscing .</p>
+          </div>
+          <div class="pr-16">
+            <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+            <h2 class="font-extrabold flex justify-center">Senior Player</h2>
+            <p class="mt-5">Amet consectetur. Condimentum </p>
+            <p class="flex justify-center"> dignissim adipiscing .</p>
+          </div>
+          <div>
+            <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+            <h2 class="font-extrabold flex justify-center">Training Ground</h2>
+            <p class="mt-5">Amet consectetur. Condimentum </p>
+            <p class="flex justify-center">dignissim adipiscing .</p>
+            
+          </div>
+        
+        
+
+        </div>
+      </section>
+      <section>
+        <div class="mt-28">
+          <h2 class="font-extrabold text-xl flex justify-center">Program Sections</h2>
+          <p class="flex justify-center mt-8 from-neutral-50">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat  </p>
+          <p class="flex justify-center">dolor. Purus urna in sit nullam proin.</p>
+        </div>
+      </section>
+      <!-- caird section -->
+      <section>
+        <div>
+         
+          <div class="flex justify-center gap-10 w-auto mt-24 relative">
+            <img src="Images/2.png" alt="">
+            <img src="Images/3.png" alt="">
+          </div>
+          
+        </div>
+        <div>
+          <h2 class="font-extrabold text-xl flex justify ">Junior Program</h2>
+          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit <br> elit 
+            enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor congue sed et in.</p>
+            <button class="bg-red-500 h-10 w-40 rounded-lg">Register Now!</button>
+        </div>
+
+        <div class="flex justify-center mt-9">
+          <img src="Images/4.png" alt="">
+        </div>
+        
+        
+
+
+      
+
+      </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
